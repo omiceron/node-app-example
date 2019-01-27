@@ -1,0 +1,1 @@
+export const MIDDLEWARES_PATH = 'middlewares'
