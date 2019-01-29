@@ -11,7 +11,7 @@ mongoose.plugin(schema => {
     schema.options.toObject = {}
   }
 
-  if (schema.options.toObject.transform == undefined) {
+  if (schema.options.toObject.transform === undefined) {
     schema.options.toObject.transform = (doc, ret) => {
       delete ret.__v
       return ret
@@ -20,6 +20,7 @@ mongoose.plugin(schema => {
 
 })
 
-mongoose.connect('mongodb://localhost/test')
+// TODO: use new url format
+mongoose.connect('mongodb://localhost:27017/new', {useNewUrlParser: true})
 
 export default mongoose
