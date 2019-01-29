@@ -1,3 +1,3 @@
 // Procfile
 
-web: node "./src/index.js"
+web: nodemon --exec babel-node ./src/index.js
