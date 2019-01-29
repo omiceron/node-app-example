@@ -1,11 +1,11 @@
 import Koa from 'koa'
 import routes from './routes'
 import middlewares from './middlewares'
-import mongoose from './libs/mongoose'
-import Element from './libs/element'
+// import mongoose from './libs/mongoose'
+// import Element from './libs/element'
 
 import Router from 'koa-router'
-
+/*
 const newRoutes = new Router({
   prefix: '/f',
 })
@@ -34,7 +34,7 @@ newRoutes
     ctx.body = ctx.element.toObject().name
   })
 
-
+*/
 const app = new Koa()
 
 middlewares.forEach(m => app.use(m))
