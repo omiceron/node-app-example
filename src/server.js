@@ -40,6 +40,6 @@ const app = new Koa()
 middlewares.forEach(m => app.use(m))
 
 app.use(routes)
-app.use(newRoutes.routes())
+// app.use(newRoutes.routes())
 
 export default app
