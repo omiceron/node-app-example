@@ -17,6 +17,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "nodemon index.js --exec babel-node",
+    "heroku-postbuild": "npm install",
     "start": "babel-node index.js"
   },
   "engines": {
@@ -27,9 +29,8 @@
   "license": "ISC",
   "description": "",
   "devDependencies": {
-    "@babel/core": "^7.2.2",
-    "@babel/node": "^7.2.2",
-    "@babel/preset-env": "^7.3.1",
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.0",
     "nodemon": "^1.18.9"
   }
 }
