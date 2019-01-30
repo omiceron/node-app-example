@@ -1,3 +1,3 @@
 // Procfile
 
-web: npx babel-node ./src/index.js
+web: node index.js
