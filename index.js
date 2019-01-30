@@ -1,9 +1,4 @@
-// const {Server} = require('http')
-import {Server} from 'http'
-const server = new Server((req, res) => {
-  res.end('helloWorld')
-})
+import server from './src/server'
+import config from 'config'
 
-server.listen(process.env.PORT || 8000)
-
-
+server.listen(config.port)

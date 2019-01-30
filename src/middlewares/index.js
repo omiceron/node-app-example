@@ -5,4 +5,4 @@ import errors from './errors'
 import bodyParser from './bodyParser'
 // import mongooseSession from './mongooseSession'
 
-export default [favicon, serve, logger, errors, /*mongooseSession*/, bodyParser]
+export default [favicon, serve, logger, errors, /*mongooseSession,*/ bodyParser]
