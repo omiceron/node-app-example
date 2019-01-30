@@ -14,10 +14,10 @@
     "koa-static": "^5.0.0",
     "mongoose": "^5.4.7"
   },
-  "main": "./src/index.js",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js"
+    "start": "babel-node index.js"
   },
   "engines": {
     "node": "10.10.0"
