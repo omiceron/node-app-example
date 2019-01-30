@@ -1,4 +1,5 @@
 import mongoose from 'mongoose'
+import config from 'config'
 
 // const beautifyUnique = require('mongoose-beautiful-unique-validation');
 
@@ -21,6 +22,6 @@ mongoose.plugin(schema => {
 })
 
 // TODO: use new url format
-mongoose.connect('mongodb://localhost:27017/new', {useNewUrlParser: true})
+mongoose.connect(config.mongo, {useNewUrlParser: true})
 
 export default mongoose
